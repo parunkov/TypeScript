@@ -5,7 +5,6 @@ window.addEventListener('load', (windowLoadEvt) => {
 	const bar: HTMLElement = document.querySelector('.ts-slider__bar');
 	const container: HTMLElement = document.querySelector('.ts-slider__container');
 	const barWidth = bar.offsetWidth;
-	console.log(barWidth);
 	const onMouseDown = (evt) => {
 		evt.preventDefault();
 		let startCoordX: number = evt.clientX;
@@ -30,7 +29,6 @@ window.addEventListener('load', (windowLoadEvt) => {
 				upEvt.preventDefault();
 				document.removeEventListener('mouseup', onMouseUp);
 				document.removeEventListener('mousemove', onMouseMove);
-				// toggle.position = toggleLeft;
 			}
 		document.addEventListener('mousemove', onMouseMove);
 		document.addEventListener('mouseup', onMouseUp);
